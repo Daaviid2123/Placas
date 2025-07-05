@@ -1,0 +1,12 @@
+<?php
+function conectar(){
+    $con=mysqli_connect("127.0.0.1","root","","placas");
+    if(mysqli_connect_errno()){
+        echo "problemas en la base de datos" . mysqli_connect_errno();
+    }
+
+    return $con;
+}
+
+
+?>
